@@ -1,0 +1,52 @@
+{
+    "PROJECT_LOCATIONS": {
+        "D:/github/Datalok/projects/aDrive": "D:/github/Datalok/projects/aDrive",
+        "E:/ProjectBrowser/ProjectBrowser/projects/bDrive": "Y:/IB_DB/ProjectBrowser/projects/bDrive",
+        "G:/IB_DB/ProjectBrowser/projects/cDrive": "X:/IB_DB/ProjectBrowser/projects/cDrive"
+    },
+    "TEMPLATE_PATH": "./_templates",
+    "SOFTWARES": {
+        "nukex": {
+            "extension": "nk",
+            "path": "C:\\GGLLP\\Nuke16.0v3\\nuke16.0.exe"
+        },
+        "silhouette": {
+            "extension": "sfx",
+            "path": "C:\\GGLLP\\Nuke16.0v3\\nuke16.0.exe"
+        },
+        "nuke": {
+            "extension": "nk",
+            "path": "C:\\GGLLP\\Nuke16.0v3\\nuke16.0.exe"
+        },
+        "photoshop": {
+            "extension": "psd",
+            "path": "C:/Program Files/Adobe/Adobe Photoshop 2024/Photoshop.exe"
+        },
+        "maya": {
+            "extension": "mb",
+            "path": "C:\\GGLLP\\maya2021\\maya.exe"
+        },
+        "blender": {
+            "extension": "blend",
+            "path": "C:\\GGLLP\\blenderlts4.2\\blender.exe"
+        }
+    },
+    "TASKS_2D": [
+        "comp",
+        "dmp",
+        "mgfx",
+        "prep",
+        "roto",
+        "track"
+    ],
+    "TASKS_3D": [
+        "fx",
+        "lighting",
+        "modeling",
+        "rigging",
+        "animation",
+        "layout"
+    ],
+    "LOGO_PATH": "./assets/logo.png",
+    "LICENSE_EXPIRY":"2025-10-01"
+}
