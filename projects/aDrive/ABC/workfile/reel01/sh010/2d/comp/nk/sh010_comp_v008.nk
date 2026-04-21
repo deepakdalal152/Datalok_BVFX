@@ -1,0 +1,206 @@
+#! C:/GGLLP/Nuke16.0v1/nuke-16.0.1.dll -nx
+version 16.0 v1
+define_window_layout_xml {<?xml version="1.0" encoding="UTF-8"?>
+<layout version="1.0">
+    <window x="0" y="0" w="1919" h="1001" screen="0">
+        <splitter orientation="1">
+            <split size="40"/>
+            <dock id="" hideTitles="1" activePageId="Toolbar.1">
+                <page id="Toolbar.1"/>
+            </dock>
+            <split size="1256" stretch="1"/>
+            <splitter orientation="2">
+                <split size="563"/>
+                <dock id="" activePageId="Viewer.1" focus="true">
+                    <page id="Viewer.1"/>
+                </dock>
+                <split size="396"/>
+                <dock id="" activePageId="DAG.1">
+                    <page id="DAG.1"/>
+                    <page id="Curve Editor.1"/>
+                    <page id="DopeSheet.1"/>
+                </dock>
+            </splitter>
+            <split size="615"/>
+            <dock id="" activePageId="Properties.1">
+                <page id="Properties.1"/>
+                <page id="uk.co.thefoundry.backgroundrenderview.1"/>
+                <page id="Scenegraph.1"/>
+            </dock>
+        </splitter>
+    </window>
+</layout>
+}
+Root {
+ inputs 0
+ name D:/IB_DB/GG_Project_browser/projects/template/nuke.nk
+ colorManagement Nuke
+ workingSpaceLUT linear
+ monitorLut sRGB
+ monitorOutLUT rec709
+ int8Lut sRGB
+ int16Lut sRGB
+ logLut Cineon
+ floatLut linear
+}
+Write {
+ inputs 0
+ file_type exr
+ first_part rgba
+ create_directories true
+ in_colorspace scene_linear
+ out_colorspace scene_linear
+ ocioColorspace scene_linear
+ display default
+ view sRGB
+ beforeRender autowrite_002.SetPathBeforeRender()
+ name AutoWrite1
+ label "<center><b>Project: \[getenv PROJECT]\n\n</b>Reel/Sequence: \[getenv REEL]\nShot Name: \[getenv SHOT]\nDepartment: \[getenv DEPARTMENT]\nTask: \[getenv TASK]\nOutput Path: \[value file]\n</center>"
+ xpos -26
+ ypos -87
+ addUserKnob {20 "Project Environments"}
+ addUserKnob {26 proj l Project: T ABC}
+ addUserKnob {26 reel l Reel/SCN: T reel_01}
+ addUserKnob {26 shot l "Shot Name:" T shot_001}
+ addUserKnob {26 department l Department: T 2d}
+ addUserKnob {26 task l Task: T comp}
+ addUserKnob {4 render_folder l "Render Folder:" M {render prerender}}
+}
+Write {
+ inputs 0
+ file_type exr
+ first_part rgba
+ create_directories true
+ in_colorspace scene_linear
+ out_colorspace scene_linear
+ ocioColorspace scene_linear
+ display default
+ view sRGB
+ beforeRender autowrite_002.SetPathBeforeRender()
+ name AutoWrite2
+ label "<center><b>Project: \[getenv PROJECT]\n\n</b>Reel/Sequence: \[getenv REEL]\nShot Name: \[getenv SHOT]\nDepartment: \[getenv DEPARTMENT]\nTask: \[getenv TASK]\nOutput Path: \[value file]\n</center>"
+ xpos 158
+ ypos -38
+ addUserKnob {20 "Project Environments"}
+ addUserKnob {26 proj l Project: T ABC}
+ addUserKnob {26 reel l Reel/SCN: T reel_01}
+ addUserKnob {26 shot l "Shot Name:" T shot_001}
+ addUserKnob {26 department l Department: T 2d}
+ addUserKnob {26 task l Task: T comp}
+ addUserKnob {4 render_folder l "Render Folder:" M {render prerender}}
+}
+Write {
+ file_type exr
+ first_part rgba
+ create_directories true
+ in_colorspace scene_linear
+ out_colorspace scene_linear
+ ocioColorspace scene_linear
+ display default
+ view sRGB
+ beforeRender autowrite_002.SetPathBeforeRender()
+ name AutoWrite3
+ label "<center><b>Project: \[getenv PROJECT]\n\n</b>Reel/Sequence: \[getenv REEL]\nShot Name: \[getenv SHOT]\nDepartment: \[getenv DEPARTMENT]\nTask: \[getenv TASK]\nOutput Path: \[value file]\n</center>"
+ xpos 158
+ ypos -14
+ addUserKnob {20 "Project Environments"}
+ addUserKnob {26 proj l Project: T ABC}
+ addUserKnob {26 reel l Reel/SCN: T reel_01}
+ addUserKnob {26 shot l "Shot Name:" T shot_001}
+ addUserKnob {26 department l Department: T 2d}
+ addUserKnob {26 task l Task: T comp}
+ addUserKnob {4 render_folder l "Render Folder:" M {render prerender}}
+}
+Write {
+ inputs 0
+ file_type exr
+ first_part rgba
+ create_directories true
+ in_colorspace scene_linear
+ out_colorspace scene_linear
+ ocioColorspace scene_linear
+ display default
+ view sRGB
+ beforeRender autowrite_002.SetPathBeforeRender()
+ name AutoWrite4
+ label "<center><b>Project: \[getenv PROJECT]\n\n</b>Reel/Sequence: \[getenv REEL]\nShot Name: \[getenv SHOT]\nDepartment: \[getenv DEPARTMENT]\nTask: \[getenv TASK]\nOutput Path: \[value file]\n</center>"
+ xpos 434
+ ypos 23
+ addUserKnob {20 "Project Environments"}
+ addUserKnob {26 proj l Project: T ABC}
+ addUserKnob {26 reel l Reel/SCN: T reel_01}
+ addUserKnob {26 shot l "Shot Name:" T shot_001}
+ addUserKnob {26 department l Department: T 2d}
+ addUserKnob {26 task l Task: T comp}
+ addUserKnob {4 render_folder l "Render Folder:" M {render prerender}}
+}
+Write {
+ inputs 0
+ file_type exr
+ first_part rgba
+ create_directories true
+ in_colorspace scene_linear
+ out_colorspace scene_linear
+ ocioColorspace scene_linear
+ display default
+ view sRGB
+ beforeRender autowrite_002.SetPathBeforeRender()
+ name AutoWrite5
+ label "<center><b>Project: \[getenv PROJECT]\n\n</b>Reel/Sequence: \[getenv REEL]\nShot Name: \[getenv SHOT]\nDepartment: \[getenv DEPARTMENT]\nTask: \[getenv TASK]\nOutput Path: \[value file]\n</center>"
+ xpos 397
+ ypos -150
+ addUserKnob {20 "Project Environments"}
+ addUserKnob {26 proj l Project: T ABC}
+ addUserKnob {26 reel l Reel/SCN: T reel_01}
+ addUserKnob {26 shot l "Shot Name:" T shot_001}
+ addUserKnob {26 department l Department: T 2d}
+ addUserKnob {26 task l Task: T comp}
+ addUserKnob {4 render_folder l "Render Folder:" M {render prerender}}
+}
+Write {
+ inputs 0
+ file_type exr
+ first_part rgba
+ create_directories true
+ in_colorspace scene_linear
+ out_colorspace scene_linear
+ ocioColorspace scene_linear
+ display default
+ view sRGB
+ beforeRender autowrite_002.SetPathBeforeRender()
+ name AutoWrite6
+ label "<center><b>Project: \[getenv PROJECT]\n\n</b>Reel/Sequence: \[getenv REEL]\nShot Name: \[getenv SHOT]\nDepartment: \[getenv DEPARTMENT]\nTask: \[getenv TASK]\nOutput Path: \[value file]\n</center>"
+ xpos -237
+ ypos -61
+ addUserKnob {20 "Project Environments"}
+ addUserKnob {26 proj l Project: T ABC}
+ addUserKnob {26 reel l Reel/SCN: T reel_01}
+ addUserKnob {26 shot l "Shot Name:" T shot_001}
+ addUserKnob {26 department l Department: T 2d}
+ addUserKnob {26 task l Task: T comp}
+ addUserKnob {4 render_folder l "Render Folder:" M {render prerender}}
+}
+Write {
+ inputs 0
+ file_type exr
+ first_part rgba
+ create_directories true
+ in_colorspace scene_linear
+ out_colorspace scene_linear
+ ocioColorspace scene_linear
+ display default
+ view sRGB
+ beforeRender autowrite_002.SetPathBeforeRender()
+ name AutoWrite7
+ label "<center><b>Project: \[getenv PROJECT]\n\n</b>Reel/Sequence: \[getenv REEL]\nShot Name: \[getenv SHOT]\nDepartment: \[getenv DEPARTMENT]\nTask: \[getenv TASK]\nOutput Path: \[value file]\n</center>"
+ selected true
+ xpos -498
+ ypos 47
+ addUserKnob {20 "Project Environments"}
+ addUserKnob {26 proj l Project: T ABC}
+ addUserKnob {26 reel l Reel/SCN: T reel_01}
+ addUserKnob {26 shot l "Shot Name:" T shot_001}
+ addUserKnob {26 department l Department: T 2d}
+ addUserKnob {26 task l Task: T comp}
+ addUserKnob {4 render_folder l "Render Folder:" M {render prerender}}
+}
